@@ -69,6 +69,10 @@ class PolinomialRegression extends Controller
 
         $this->R2 = 1 - ($sumDeviate / $sumNormalize);
         $this->Err = ($sumDelta / count($this->X)) * 100;
+
+        // Round data
+        $this->R2 = round($this->R2, 9);
+        $this->Err = round($this->Err, 4);
     }
 
     /**

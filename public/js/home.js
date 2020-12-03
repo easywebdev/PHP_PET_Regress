@@ -103,7 +103,7 @@ function renderHtmlResult(answer, regress)
             '<tr><td>A1</td><td>' + answer.regress.A1 + '</td></tr>' +
             '<tr><td>A0</td><td>' + answer.regress.A0 + '</td></tr>' +
             '<tr><td>R<sup>2</sup></td><td>' + answer.regress.R2 + '</td></tr>' +
-            '<tr><td>Err</td><td>' + answer.regress.regressErr + '</td></tr>' +
+            '<tr><td>Err [%]</td><td>' + answer.regress.regressErr + '</td></tr>' +
             '</table>'
         );
     }
@@ -114,7 +114,7 @@ function renderHtmlResult(answer, regress)
             '<tr><td>Intercept (A1)</td><td>' + answer.regress.A1 + '</td></tr>' +
             '<tr><td>Slope (A0)</td><td>' + answer.regress.A0 + '</td></tr>' +
             '<tr><td>R<sup>2</sup></td><td>' + answer.regress.R2 + '</td></tr>' +
-            '<tr><td>Err</td><td>' + answer.regress.regressErr + '</td></tr>' +
+            '<tr><td>Err [%]</td><td>' + answer.regress.regressErr + '</td></tr>' +
             '</table>'
         );
     }
@@ -146,7 +146,7 @@ function parceTableDataToJson(tableID)
         row[i] = $(elem).html();
         row[i] = row[i].replace(/\n/g, '');                                                     // remove all '\n'
         row[i] = row[i].replace(/ /g, '');                                                      // remove all 'spaces'
-        row[i] = row[i].replace('<tdcontenteditable="true">', '<td contenteditable="true">')    // fix for editable cells
+        row[i] = row[i].replace(/<tdcontenteditable="true">/g, '<td contenteditable="true">')    // fix for editable cells
     });
 
     // create array of data
@@ -160,8 +160,8 @@ function parceTableDataToJson(tableID)
     // create object from array
     for (let i = 0; i < row.length; i++) {
         dataObj = {
-            x: data[i][0].trim(),
-            y: data[i][1].trim(),
+            x: data[i][1].trim(),
+            y: data[i][2].trim(),
         }
         //outArr[i - 1] = JSON.stringify(dataObj)
         outArr.push(dataObj);

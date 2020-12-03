@@ -16,7 +16,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="295f9622-fd97-4393-8fe3-3990fa5a52f0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LinearRegression.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LinearRegression.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PolinomialRegression.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PolinomialRegression.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/home.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,6 +193,7 @@
       <workItem from="1606918291076" duration="1179000" />
       <workItem from="1606987448251" duration="7301000" />
       <workItem from="1607000242715" duration="3929000" />
+      <workItem from="1607007057153" duration="1797000" />
     </task>
     <servers />
   </component>
