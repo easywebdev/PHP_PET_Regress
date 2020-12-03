@@ -1,0 +1,173 @@
+/**
+ * Main Styles
+ */
+
+/*=== Structure ===*/
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+/**/
+
+/*=== Main ===*/
+html {
+    /*font-size: 1.5vw;*/
+    font-size: 20px;
+}
+
+p {
+    margin-bottom: 0.5rem;
+}
+
+.h1 {
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.mb-1rem {
+    margin-bottom: 1rem;
+}
+
+.h-18rem {
+    height: 18rem;
+}
+
+.mh-18rem {
+    min-height: 18rem;
+}
+
+.mw-7rem {
+    min-width: 7rem;
+}
+
+.h2 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+.header {
+    background-color: #2d3748;
+}
+
+.main {
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: #a0aec0;
+}
+
+.chart-area {
+    padding: 1rem 0;
+}
+
+.footer {
+    background-color: #2d3748;
+    padding: 1rem;
+    box-sizing: border-box;
+    text-align: center;
+    color: #ffffff;
+}
+
+.title {
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.block {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.block__item {
+    min-width: 10rem;
+    margin-right: 1rem;
+    padding: 1rem;
+    overflow-y: auto;
+    /*background-color: red;*/
+}
+
+    .block__item:last-child {
+        margin-right: 0;
+        min-width: 19rem;
+    }
+
+.formula {
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+a.btn, a.btn:hover, a.btn:focus, a.btn:active, a.btn:visited {
+    display: inline-block;
+    padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+    border-radius: 0.2rem;
+    background-color: #2d3748;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a.btn:hover {
+    background-color: #2d3748;
+    /*box-shadow: 0px 10px 29px 0px rgba(46, 8, 59, 0.34),inset 0px -1px 0px 0px rgba(255, 255, 255, 0.08);*/
+    box-shadow: inset 0 0 0 3px #ffffff;
+}
+
+a.btn:active {
+    background-color: rgba(255, 255, 255,.2);
+}
+
+div.chart {
+    max-height: 500px;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+table.tbl {
+    border-collapse: collapse;
+    border: solid 1px black;
+}
+    .tbl td, .tbl th {
+        border: solid 1px black;
+        padding: 0.5rem;
+    }
+/**/
+
+/*=== Adaptive ===*/
+@media screen and (max-width: 700px) {
+    html {
+        font-size: 2.5vw;
+    }
+
+    .block__item:last-child {
+        min-width: 17rem;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    html {
+        font-size: 2.7vw;
+    }
+}
+
+@media screen and (max-width: 543px) {
+    .block__item {
+        min-width: 11rem;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .block__item {
+        min-width: 12rem;
+    }
+}
+
+@media screen and (max-width: 351px) {
+    html {
+        font-size: 2.6vw;
+    }
+
+    .block__item {
+        min-width: 13rem;
+    }
+}
+/**/

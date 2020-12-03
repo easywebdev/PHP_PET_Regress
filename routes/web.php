@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\HomePage;
+use App\Http\Controllers\LinearRegression;
+use App\Http\Controllers\PolinomialRegression;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +16,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
+
+Route::get('/', [HomePage::class, 'index'])->name('home');
+Route::get('/linear', [LinearRegression::class, 'getRegress'])->name('linear');
+Route::get('/polynomial', [PolinomialRegression::class, 'getRegress'])->name('polynomial');
